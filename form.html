@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div class="container">
+                    <a class="navbar-brand fw-bold" href="index.html"><i><img src="https://png.klev.club/uploads/posts/2024-05/png-klev-club-yh7i-p-logotip-kompyuter-png-24.png" alt="логотип" width="40" height="40"></i>PCHome</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="info.html">Мастерская</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Магазин</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                        <li class="nav-item"><a class="btn btn-success" href="form.html">Написать нам</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <section class="hero">
+            <div class="container">
+                <h1>Мастерская счастливых компьютеров</h1>
+                <p>С 2010 года воплощаем в жизнь ваши компьютерные мечты. Доверься нам и увидь всю красоту современного гейминга!</p>
+                <div class="hero-button">
+                    <a class="btn btn-success" href="shop.html"> <i><img src="pc.png" alt="значок пк" width="40" height="40"></i>Наши сборки</a>
+                    <a class="btn btn-success"href="form.html"> <i><img src="pismo.svg" alt="значок письма" width="40" height="40" ></i>Воплотить мечту</a>
+                </div>
+            </div>
+        </section>
+<main>
+    <form method="post" autocomplete="on" novalidate id="form">
+        <fieldset>
+            <legend>Введите свои данные и мы свяжемся с вами вближайшее время!
+                <div class="container-form">
+                    <label for="email">Введите ваш емейл</label>
+                        <input type="email" minlength="8" type="email" id="email" required placeholder="yandex@yandex.ru">
+                </div>
+                <div class="container-form">
+                    <label for="tel">Введите телефон</label>
+                        <input type="tel"  name="tel" id="tel" required placeholder="+79123456789">
+                </div>
+                <div class="container-form">
+                    <label for="text">Опишите цель обращения</label>
+                        <textarea name="text" id="text" rows="5"></textarea>
+                </div>
+            </legend>
+            <legend>
+                <div class="container-form">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Выберите ваш бюджет</option>
+                    <option value="1">10-20 тысяч денег</option>
+                    <option value="2">20-30 тысяч денег</option>
+                    <option value="3">30-40 тысяч денег</option>
+                    <option value="4">40-50 тысяч денег</option>
+                    <option value="5">50-60 тысяч денег</option>
+                    <option value="6">60-70 тысяч денег</option>
+                    <option value="7">80-90 тысяч денег</option>
+                    <option value="8">90-100 тысяч денег</option>
+                    <option value="9">100-120 тысяч денег</option>
+                    <option value="10">120-140 тысяч денег</option>
+                    <option value="11">140-160 тысяч денег</option>
+                    <option value="12">160-180 тысяч денег</option>
+                    <option value="13">180-200 тысяч денег</option>
+                    <option value="14">Любые деньги за мечту</option>
+                </select>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="consultation" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">Мне нужна консультация</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="need" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">Мне нужна сборка</label>
+                </div>
+            </legend>
+                <div>
+                    <button type="submit" class="btn btn-success">Отправить</button>
+                    <button type="reset" class="btn btn-secondary">Сбросить</button>
+                </div>
+        </fieldset>
+    </form>
+
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-card">
+            <h3>Комплектующие</h3>
+            <ul class="ul">
+                <li><a href="shop.html">Процессоры</a></li>
+                <li><a href="shop.html">Видеокарты</a></li>
+                <li><a href="shop.html">Озу</a></li>
+                <li><a href="shop.html">Блоки питания</a></li>
+                <li><a href="shop.html">Материнские платы</a></li>
+                <li><a href="shop.html">Накопители</a></li>
+                <li><a href="shop.html">Охлаждение</a></li>
+            </ul>
+        </div>
+        <div class="footer-card">
+            <h3>Сервис</h3>
+            <ul class="ul">
+                <li><a href="info.html">Ремонт</a></li>
+                <li><a href="info.html">Обслуживание</a></li>
+                <li><a href="info.html">Оценка вашего железа</a></li>
+                <li><a href="info.html">Консультации</a></li>
+            </ul>
+        </div>
+        <div class="footer-card">
+            <h3>Контакты</h3>
+            <ul class="ul">
+                <li><img src="https://png.klev.club/uploads/posts/2024-05/png-klev-club-aycc-p-znachok-geolokatsii-belii-png-1.png" alt="место" >г. Город ул. Улица д.Дом</li>
+                <li><img src="https://imgpng.ru/d/phone_PNG446.png" alt="телефон" >+7(900)-000-00-00</li>
+                <li><img src="https://icon-library.com/images/email-icon-white-png/email-icon-white-png-14.jpg" alt="email" >yandex.ru@yandex.ru</li>
+                <li><img src="https://img.icons8.com/m_outlined/512/FFFFFF/clock.png" alt="часы" >Пн-Пт: 8:00-18:00, Сб-Вс:10:00-17:00</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>2026. Создано студентом. Все права абсолютно беззащитны</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

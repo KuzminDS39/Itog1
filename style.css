@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --text-color-w: white;
+    --text-color-b: rgb(41, 23, 2); 
+    --bg-color: rgb(231, 222, 210);  
+    --bg-color-card: #fcf5e9;
+    --bg-color-lg: linear-gradient(45deg, rgba(66, 44, 2, 0.712),rgba(80, 36, 7, 0.815));
+    --ff-:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.container{
+    max-width: 1200px;
+    font-family: var(--ff-)
+}
+.container-about{
+    max-width: 1200px;
+    font-family: var(--ff-);
+    background-color: var(--bg-color);  
+    margin: 30px auto 0; 
+    border-radius: 20px;
+    padding: 20px;
+}
+.hero{
+    background: var(--bg-color-lg);
+    color: var(--text-color-w);
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+    
+}
+.hero h1{
+    font-size: 4rem;
+    border-radius: 20px;
+    font-weight: 800;
+}
+.hero p{
+    font-size: 2.5rem;
+    border-radius: 20px;
+}
+.hero-button a{
+
+    color: var(--text-color-w);
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+.text{
+    text-align: center; 
+    font-size: 3rem; 
+    color: var(--text-color-b);
+    font-weight: 800;
+    margin: 70px;
+    font-family: var(--ff-)
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 1.5rem;
+    margin-top: 30rem;
+    max-width: 1200px;
+    background-color: var(--bg-color);  
+    margin: 30px auto 0; 
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 10px 10px rgba(31, 25, 15, 0.247);
+    
+}
+.card{
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: 1.5rem;
+    text-align: center;
+    color:var(--text-color-b);
+    background: var(--bg-color-card);
+    box-shadow: 5px 10px 10px rgba(31, 25, 15, 0.247);
+    font-family: var(--ff-);
+    
+    
+}
+.card:hover{
+   transform: rotateY(-10px);
+   transform: scale(1.02); 
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+.card img{
+    height: 300px;
+
+    
+}
+.card a{
+    text-decoration: none;
+    color:var(--text-color-b);
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 600px;
+    margin: 30px auto ;
+    background-color: var(--bg-color); 
+    background-size: 1200px; 
+    margin: 0 auto; 
+    border-radius: 20px;
+    font-family: var(--ff-)
+
+    
+}
+
+#carouselExampleCaptions{
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    
+
+
+}
+.carousel-container img {
+    width: 800px;
+    height: 500px;
+    border-radius: 30px;
+    
+}
+.carousel-inner h5{
+    font-size: 3rem;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.744);
+    background-size: 100%;
+    border-radius: 50px;
+    color: black;
+    font-family: var(--ff-)
+}
+.carousel-inner p{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.744);
+    background-size: 100%;
+    border-radius: 50px;
+    color: black;
+    font-family: var(--ff-)
+}
+.feedback{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 50px;
+    grid-auto-rows: 150px;
+
+}
+.card-feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 40px;
+    background: var(--bg-color);
+    color: var(--text-color-b);
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color-b);
+    font-family: var(--ff-);
+    font-size: 1.5rem;
+    box-shadow: 5px 10px 10px rgba(31, 25, 15, 0.247);
+}
+footer{
+    background: var(--bg-color-lg);
+    font-family: var(--ff-);
+    margin-top: 50px;
+
+}
+.footer-container{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    
+}
+.ul{
+    list-style-type: none;
+
+}
+.ul img{
+    width: 40px; 
+    height: 40px;
+    color: var(--text-color-w);
+}
+.ul a{
+    text-decoration: none;
+    color: var(--text-color-w);
+}
+
+.footer-card{
+    max-width: 400px;
+    height: 250px;
+    margin: 20px auto;
+    color: var(--text-color-w);
+    font-family: var(--ff-);
+    
+
+}
+.footer-copy{
+    text-align: center;
+    color: var(--text-color-w);
+}
+#form{
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: var(--ff-);
+}
+.container-form{
+    margin: 15px auto;
+}
